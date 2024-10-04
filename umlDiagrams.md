@@ -4,8 +4,8 @@ title: Scooter Project
 ---
 classDiagram
     
-    Scooter *-- ScooterApp
-    User *-- ScooterApp
+    Scooter --* ScooterApp
+    User --* ScooterApp
     
     class ScooterApp{
             +obj stations
@@ -18,7 +18,7 @@ classDiagram
             +rentScooter(scooter, user)
             +print()
         }
-        
+
     class Scooter{
         +str station
         +obj user
